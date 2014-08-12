@@ -13,7 +13,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 if ( !function_exists( 'jquery_live_filter_wp_list_tables' ) ) {
 	function jquery_live_filter_wp_list_tables( $hook_suffix ) {
-	if( !is_admin() )
+		if( !is_admin() )
 		return;
     	if ( 'plugins.php' !== $hook_suffix || 'edit.php' !== $hook_suffix  )
         	return;
@@ -26,6 +26,8 @@ if ( !function_exists( 'jquery_live_filter_wp_list_tables' ) ) {
 
 if ( !function_exists( 'jquery_wp_list_tables_filter_css_styles' ) ) {
 function jquery_wp_list_tables_filter_css_styles() {
+		if( !is_admin() )
+		return;
 	$screen = get_current_screen();
 	$base = $screen->base;
 	$name = $screen->id;
