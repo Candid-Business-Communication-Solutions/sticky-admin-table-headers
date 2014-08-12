@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Sticky Admin Table Headers
+Plugin Name: Filter Admin Tables Live
 Plugin URI: http://github.com/bryanwillis/sticky-admin-table-headers
 Description: Sticks the Table Headers on the Admin Edit Screens
 Version: 1.0.0
@@ -31,7 +31,7 @@ function jquery_wp_list_tables_filter_css_styles() {
 	$screen = get_current_screen();
 	$base = $screen->base;
 	$name = $screen->id;
-	if ( $base === 'edit' || $name == 'plugins' ) { ?>
+	if ( is_object($screen) && ($base === 'edit' || $name == 'plugins') ) { ?>
 		<style type="text/css">
 			.filter-table .quick { margin-left: 0.5em; font-size: 0.8em; text-decoration: none; }
 			.fitler-table .quick:hover { text-decoration: underline; }
