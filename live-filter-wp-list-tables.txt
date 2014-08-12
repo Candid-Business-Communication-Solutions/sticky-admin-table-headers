@@ -1,5 +1,5 @@
-=== Sticky Admin Table Headers ===
-Contributors: codecandid
+=== Live Filter (Quick Search) Admin Tables ===
+Contributors: codecandid, sunnywalker
 Tags: admin, backend, button, page, Post, publish, save, scrollbar, scrolling, settings, sticky widget, sticky box, update, user experience, ux, wp-admin
 Requires at least: 3.0.1
 Tested up to: 3.9.1
@@ -7,9 +7,21 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A WordPress plugin that alters the admin tables to fix the headers on the top of the screen when scrolling
+A WordPress plugin that alters the admin tables to so quick filtering can be done from the search bar. This is generally for people who have long tables and don't use the paging functionality.
 
 == Description ==
+
+
+Powered by the awesome Jquery.FilterTable created by SunnyWalker
+http://sunnywalker.github.io/jQuery.FilterTable/
+
+
+See the site for a full list of paramaters. The plugin has many more options than I've used. 
+
+Future releases will include ajax-paging/autoscroll, sticky table headers, and an options page to enable/disable paramaters.
+Use this with codepress-admin-columns to really unleash it's potential.
+
+
 
 == Installation ==
 
