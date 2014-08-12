@@ -1,13 +1,24 @@
 <?php
-/*
-Plugin Name: Live Filter Admin WP List Tables
-Plugin URI: http://github.com/bryanwillis/sticky-admin-table-headers
-Description: Sticks the Table Headers on the Admin Edit Screens
-Version: 1.0.0
-Author: Bryan Willis
-Author URI: http://profiles.wordpress.org/codecandid
-License: GPLv2 or later
-*/
+/**
+ * Live Filter Admin WP List Tables
+ *
+ * @package   Live Filter Admin WP List Tables
+ * @author    Bryan Willis <businesscandid@gmail.com>
+ * @license   GPL-2.0+
+ * @link      http://www.canddibusiness.com
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Live Filter Admin WP List Tables
+ * Plugin URI:        @TODO
+ * Description:       Adds live filtering to wordpress list tables on admin edit screens and plugins screens
+ * Version:           1.0.0
+ * Author:            Bryan Willis
+ * Author URI:        http://profiles.wordpress.org/codecandid
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * GitHub Plugin URI: @TODO
+ */
+
 if (!defined('WPINC')) {
 	die;
 }
