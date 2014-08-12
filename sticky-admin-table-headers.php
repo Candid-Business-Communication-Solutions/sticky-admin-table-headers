@@ -11,13 +11,14 @@ License: GPLv2 or later
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
-if(!function_exists('wp_list_tables_sticky_headers_js')) {
-if( !is_admin() ) 
+if ( !function_exists( 'jquery_live_filter_wp_list_tables' ) ) {
+	function jquery_live_filter_wp_list_tables() {
+if( !is_admin() )
 	return;
 function wp_list_tables_sticky_headers_js( $hook_suffix ) {
-    if ( 'edit.php' !== $hook_suffix )
+    if ( 'plugins.php' !== $hook_suffix || 'edit.php' !== $hook_suffix  )
         return;
-        wp_enqueue_script( 'sticky-admin-table-headers', plugin_dir_url( __FILE__ ) . 'jquery.sticky-admin-table-headers.js', array( 'jquery' ), '1.0.0', true );	
+        wp_enqueue_script( 'jquery-live-filter-wp-list-tables', plugin_dir_url( __FILE__ ) . 'jquery.live-filter-wp-list-tables.js', array( 'jquery' ), '1.0.0', true );	
 }
 	add_action( 'admin_enqueue_scripts', 'wp_list_tables_sticky_headers_js', 20 );
 }
